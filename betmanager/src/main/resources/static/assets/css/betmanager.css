@@ -1,0 +1,57 @@
+#overlay-loading {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+#overlay-loading #loading-area {
+    background-color: #FFF;
+    padding: 7px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+#overlay-loading > #loading-area > img {
+    width: 60px;
+    margin-top: 9px;
+    margin-left: 16%;
+    height: 60px;
+}
+
+#overlay-loading #loading-area p {
+    padding: 0px 8px;
+}
+
+.header-component {
+    line-height: 40px;
+}
+
+.example-modal .modal {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    display: block;
+    z-index: 1;
+}
+.example-modal .modal {
+    background: transparent !important;
+}
+
+input[type="text"].date-input {
+    width: 75px;
+}
+
+input[type="text"].hour-input {
+    width: 40px;
+}

@@ -1,0 +1,42 @@
+<div class="box box-default box-solid collapsed-box">
+    <div class="box-header with-border">
+        <h3 class="box-title">Endereço</h3>
+
+        <div class="box-tools pull-right">
+            <button data-widget="collapse" class="btn btn-box-tool" type="button"><i class="fa fa-plus"></i>
+            </button>
+        </div>
+    </div>
+    <div class="box-body" style="display: none;">
+        <form>
+            <div class="form-group">
+                <label for="state">Estado</label>
+                <select ng-options="state.uf as state.label for state in states" type="text" class="form-control" ng-model="entity.address.state" id="state" placeholder="Estado" style="width: 60%"/>
+            </div>
+            <div class="form-group">
+                <label for="city">Cidade</label>
+                <input type="text" class="form-control" ng-model="entity.address.city" id="city" placeholder="Cidade" style="width: 25%"/>
+            </div>
+            <div class="form-group">
+                <label for="zipCode">CEP</label>
+                <input type="text" class="form-control" ng-model="entity.address.zipCode" id="zipCode" placeholder="CEP" style="width: 25%"/>
+            </div>
+            <div class="form-group">
+                <label for="street">Rua</label>
+                <input type="text" class="form-control" ng-model="entity.address.street" id="street" placeholder="Rua" style="width: 25%"/>
+            </div>
+            <div class="form-group">
+                <label for="number">Número</label>
+                <input type="text" class="form-control" ng-model="entity.address.number" id="number" placeholder="Número" style="width: 25%"/>
+            </div>
+            <div class="form-group">
+                <label for="complement">Complemento</label>
+                <input type="text" class="form-control" ng-model="entity.address.complement" id="complement" placeholder="Complemento" style="width: 25%"/>
+            </div>
+            <div class="form-group">
+                <label for="reference">Referência</label>
+                <input type="text" class="form-control" ng-model="entity.address.reference" id="reference" placeholder="Referência" style="width: 25%"/>
+            </div>
+        </form>
+    </div>
+</div>

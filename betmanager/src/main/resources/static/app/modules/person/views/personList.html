@@ -1,0 +1,58 @@
+<div ng-show="messageBox.show" class="callout callout-{{messageBox.type}}">
+    {{messageBox.message}}
+</div>
+
+<section class="content-header">
+    <h1>
+        Listagem de Usuários
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#/"><i class="fa fa-dashboard"></i> Página Inicial</a></li>
+        <li class="active"><i class="icon-double-angle-right"></i>Listagem de Usuários</li>
+    </ol>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box-tools pull-right header-component">
+                <a class="btn btn-small btn-primary" href="#/personsNew" >
+                    <i class="fa fa-user-plus bigger-110"></i>  Novo
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main content -->
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <table class="table table-bordered">
+                    <tr>
+                        <th style="width: 10px">#</th>
+                        <th class="text-center">Usuário</th>
+                        <th class="text-center">Email</th>
+                        <th class="text-center">Perfil</th>
+                        <th class="text-center">Ações</th>
+                    </tr>
+                    <tr ng-repeat="person in persons" class="text-center">
+                        <td>{{person.id}}</td>
+                        <td>{{person.name}}</td>
+                        <td>{{person.email}}</td>
+                        <td>{{person.user.profiles[0].name | profileConvert}}</td>
+                        <td>
+                            <div class="box-tools">
+                                <a data-ng-href="#/persons/{{person.id}}" class="btn btn-mini btn-primary ">
+                                    <i class="fa fa-edit bigger-120"></i>
+                                </a>
+                                <button class="btn btn-mini btn-danger" data-ng-click="delete(person)">
+                                    <i class="fa fa-trash bigger-120"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

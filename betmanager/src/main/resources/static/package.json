@@ -1,0 +1,11 @@
+{
+  "name": "afferolab-logistica-client",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt-cli": "0.1.7",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-connect": "~0.7.1",
+    "jshint-stylish": "~0.1.5"
+  }
+}
